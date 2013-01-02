@@ -42,7 +42,8 @@ do_report_success() {
 
 # noarch packages (e.g. PACKAGE_ARCH=all in OE)
 
-BUILD_MACHINE="beagleboard"
+#BUILD_MACHINE="beagleboard"
+BUILD_MACHINE="elmo"
 BUILD_CLEAN=""
 BUILD_TARGETS=""
 do_build
@@ -62,7 +63,7 @@ do_build
 # * i586:      qemux86
 
 if [ "$1" = "" ] ; then
-	ARCH_MACHINES="simpad om-gta01 c7x0 ixp4xxbe nokia800 htckaiser beagleboard dht-walnut efika qemux86"
+	ARCH_MACHINES="elmo simpad om-gta01 c7x0 ixp4xxbe nokia800 htckaiser beagleboard dht-walnut efika qemux86"
 else
 	ARCH_MACHINES="$@"
 fi
@@ -425,7 +426,7 @@ done
 # machine packages (machine specific (sub)packages)
 
 if [ "$1" = "" ] ; then
-    MACHINES="simpad om-gta01 c7x0 ixp4xxbe nokia800 htckaiser beagleboard dht-walnut efika qemux86"
+    MACHINES="elmo simpad om-gta01 c7x0 ixp4xxbe nokia800 htckaiser beagleboard dht-walnut efika qemux86"
 else
     MACHINES="$@"
 fi
