@@ -93,7 +93,7 @@ INHERIT += "blacklist"
 INHERIT += "devshell" 
 
 #use angstrom source mirrors to combat 404s
-INHERIT += "angstrom-mirrors" 
+INHERIT += "prismcube-mirrors"
 
 #run QA tests on builds and packages and log them  
 INHERIT += "insane"
